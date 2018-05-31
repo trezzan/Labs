@@ -165,28 +165,40 @@ Look at the tcpdump output for the UDP packets trying to resolve the domain. The
 
 ### Milestone 3
 
-Look at the source and destination IPs; how much of the traffic is inbound vs. outbound?
+Look at the source and destination IPs; how much of the traffic is inbound vs. outbound? **When specifying traffic to and from my IP, about 25% is inbound and 75% is outbound.**
 
-Try nslookup on a couple of IPs that aren't in your network. See if you can figure out who those IPs belong to: 
+Try nslookup on a couple of IPs that aren't in your network. See if you can figure out who those IPs belong to: **root@kali:~# nslookup 172.217.14.110
+110.14.217.172.in-addr.arpa	name = lax31s01-in-f14.1e100.net.
+Authoritative answers can be found from:
+root@kali:~# nslookup 72.21.91.29
+** server can't find 29.91.21.72.in-addr.arpa: NXDOMAIN
+root@kali:~# nslookup 104.70.224.245
+245.224.70.104.in-addr.arpa	name = a104-70-224-245.deploy.static.akamaitechnologies.com.
+Authoritative answers can be found from:**
 
-Try to identify traffic associated with at least one process on your host that's either part of the OS itself or is auto-launched at startup: 
+Try to identify traffic associated with at least one process on your host that's either part of the OS itself or is auto-launched at startup: **Summary: 2018-05-31 00:30:53	63.251.109.88	443	192.168.230.131	192.168.230.131	34256		Application Data**
 
-See if you can spot any ARP packets used to resolve IPs to MAC addresses: 
+See if you can spot any ARP packets used to resolve IPs to MAC addresses: **2018-05-31 00:30:47	Vmware_15:c3:25		Vmware_e0:eb:88	00:50:56:e0:eb:88			192.168.230.131 is at 00:0c:29:15:c3:25; no, there were only two packets**
 
-### Milestone
+### Milestone 4
 
-What's the purpose of the request to checkip.dyndns.org?
+What's the purpose of the request to checkip.dyndns.org? **it redirects the DNS requests to a malicious site**
 
-What's up with the three jpg requests? Why two different domains?
+What's up with the three jpg requests? Why two different domains? **i am assuming the DNS redirect got the image from more than one place after the previous requests were canceled.**
 
-How was the malware delivered? What isn't Mike telling us?
+How was the malware delivered? What isn't Mike telling us? **Mike says he clicked an atatchment and it downloaded the malware. it looks like it came from a spoofed microsoft update download.**
 
 
+### Milestone 5 & 6
+
+I could not proceed with the airodump-ng and aircrack-ng sections. They require the host be running the software, and I was virtualizing my Kali VM. My apologies. 
 
 ## Week 10
-### Milestone
-### Milestone
-### Milestone
-### Milestone
-### Milestone
-### Milestone
+
+### Milestone 0
+
+### Milestone 1
+
+### Milestone 2
+
+### Milestone 3
