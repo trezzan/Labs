@@ -196,9 +196,29 @@ I could not proceed with the airodump-ng and aircrack-ng sections. They require 
 ## Week 10
 
 ### Milestone 0
-
+![](https://github.com/trezzan/Labs/blob/master/0.png)
 ### Milestone 1
-
+![](https://github.com/trezzan/Labs/blob/master/1.png)
+Following the instructions to a T 3 times yielded no results. The final command of the SET toolkit would freeze for about two minutes, then go back to the opening page. This was attempted with and without attatchments and different accounts. 
+![](https://github.com/trezzan/Labs/blob/master/11.png)
+This is the open inbox for the target gmail inbox. No spoof emails came through. 
 ### Milestone 2
-
+![](https://github.com/trezzan/Labs/blob/master/2.png)
+Steps were follow thoroughly. The walkthrough alludes to not fully working setup. The tool did perform as expected. 
 ### Milestone 3
+![](https://github.com/trezzan/Labs/blob/master/3.png)
+Spoofing the Facebook website at localhost was a success. The host did not carry the connection, so the example worked exclusively on the virtual environment. 
+### Milestone 4
+As the results of milestone 0 were not as hoped, getting the host to communicate was not possible. Milestone was skipped. 
+### Milestone 5
+**In the cases, we see a user compromised through techniques that exploit security measures partially beyond his or her control. Challenge questions:**
+
+What vulnerabilities were beyond the control of the user? **The way that Amazon stores critical payment information and how Apple handles their customer's security when fielding customer service calls.**
+
+What if anything could have been done by the user to mitigate the severity of the attack? **Not connecting multiple accounts to feed into each other. Not putting as much control over your life in one single account. Have physical backups of any and all personal information LIKE PHOTOS OF YOUR CHILDREN. Use better login protections.**
+
+**Now, think back to the fake Facebook login scenario above. Assuming a successful compromise, in which the user's Facebook username and password were successfully intercepted, answer the following:**
+
+What could the user do to mitigate this, making a successful login impossible for the attacker even with the credentials? (Hint: FB offers this as an option; not all sites do) **Double layered authentication or asking for security codes from an exterrnal source like a cell phone**
+
+Why might the username/password still be of value to the attacker even if she can't use them to login to Facebook? (Hint: think about how users come up with passwords) **People tend to reuse the same names and passwords across various accounts. Finding more attack vectors is as simple as looking up a handle and seeing where else in the internet it has been used.**
